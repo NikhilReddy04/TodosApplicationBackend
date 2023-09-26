@@ -1,0 +1,28 @@
+http://localhost:3000/todos/?status=TO%20DO
+
+###
+
+http://localhost:3000/todos/1/
+
+###
+http://localhost:3000/agenda/?date=2021-12-12
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 9,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+###
+
+PUT http://localhost:3000/todos/8/
+Content-Type: application/json
+
+{ "dueDate": "202-222-22"}
